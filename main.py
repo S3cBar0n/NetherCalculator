@@ -47,7 +47,7 @@ def get_coordinate(coord_name: str):
     while not correct_input_provided:
         try:
             coord_value = float(input(f"Enter your {coord_name} value: "))
-        except TypeError:
+        except ValueError:
             print("Incorrect input. Please enter a number.")
         else:
             correct_input_provided = True
